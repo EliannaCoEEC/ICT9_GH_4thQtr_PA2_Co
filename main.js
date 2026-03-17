@@ -2,7 +2,7 @@
 function compute_rank() {
     let math_score = Number(document.getElementById('math_score').value);
 
-    if (math_score >= 95) {
+    if (math_score >= 95 && math_score < 101) {
         window.alert('Gold')
     } else if (math_score >= 90 && math_score <=94) {
         window.alert('Silver')
@@ -10,7 +10,7 @@ function compute_rank() {
         window.alert('Bronze')
     } else if (math_score >= 80 && math_score <=84) {
         window.alert('Merit')
-    } else if (math_score < 80) {
+    } else {
         window.alert('Invalid')
     }
 }   
